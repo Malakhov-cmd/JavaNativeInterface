@@ -1,0 +1,14 @@
+
+Георгий Малахов@DESKTOP-GRHENS3 MINGW64 /e/TesterJava/JNI_dll
+$ javac -h ./src/ ./src/LogicalAnd.java
+
+Георгий Малахов@DESKTOP-GRHENS3 MINGW64 /e/TesterJava/JNI_dll
+$ E:/TDM-GCC/bin/x86_64-w64-mingw32-gcc -I/Java/include -I/Java/include/win32 -shared -o LogicAnd.dll ./src/LogicAnd.c
+./src/LogicAnd.c:1:10: fatal error: jni.h: No such file or directory
+    1 | #include <jni.h>        // JNI header provided by JDK
+      |          ^~~~~~~
+compilation terminated.
+
+Георгий Малахов@DESKTOP-GRHENS3 MINGW64 /e/TesterJava/JNI_dll
+$ E:/TDM-GCC/bin/x86_64-w64-mingw32-gcc -I"E:/Java/include" -I"E:/Java/include/win32" -shared -o LogicAnd.dll ./src/Logi
+cAnd.c
